@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A192F">
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#112244"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:radius="25dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_menu_search"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索音乐 / 歌单"
+            android:textColor="#88A0B9"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/play_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/bottom_nav"
+        android:background="#152A4D"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#0AEEFF"
+            android:radius="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+            <TextView android:text="正在播放：冰音初响" android:textColor="#fff" android:textSize="14sp"/>
+            <TextView android:text="未知艺术家" android:textColor="#88A0B9" android:textSize="10sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_media_pause"
+            android:layout_marginLeft="auto"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#112244"
+        android:gravity="center">
+
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_media_play"/>
+            <TextView android:layout_marginTop="28dp" android:text="冰音" android:textSize="10sp" android:textColor="#0AEEFF"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_add"/>
+            <TextView android:layout_marginTop="28dp" android:text="初响" android:textSize="10sp" android:textColor="#E0EBF5"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_myplaces"/>
+            <TextView android:layout_marginTop="28dp" android:text="歌单" android:textSize="10sp" android:textColor="#E0EBF5"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_sort_by_size"/>
+            <TextView android:layout_marginTop="28dp" android:text="音效" android:textSize="10sp" android:textColor="#E0EBF5"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_my_calendar"/>
+            <TextView android:layout_marginTop="28dp" android:text="我的" android:textSize="10sp" android:textColor="#E0EBF5"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

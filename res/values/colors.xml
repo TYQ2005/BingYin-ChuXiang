@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ice_blue">#0AEEFF</color>
+    <color name="ice_night">#0A192F</color>
+    <color name="ice_purple">#9D8BFF</color>
+    <color name="ice_white">#E0EBF5</color>
+    <color name="ice_card">#112244</color>
+</resources>
