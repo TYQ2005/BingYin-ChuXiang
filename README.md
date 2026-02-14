@@ -1,3 +1,4 @@
+
 # 冰音初响
 高颜值冰系音乐播放器 | 界面美观 | 动画丝滑 | 功能齐全
 
@@ -16,3 +17,6 @@
 🔧 编译环境
 - Termux + JDK17 + Android SDK
 - MT管理器 二次修改美化
+
+# BingYin-ChuXiang
+
